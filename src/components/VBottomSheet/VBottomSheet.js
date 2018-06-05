@@ -37,8 +37,9 @@ export default {
         ...this.$listeners
       },
       props: {
-        contentClass: contentClass,
-        transition: 'v-bottom-sheet-transition',
+        contentClass,
+        noClickAnimation: true,
+        transition: 'bottom-sheet-transition',
         value: this.value
       }
     }, [activator, this.$slots.default])
